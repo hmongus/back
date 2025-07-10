@@ -203,11 +203,6 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 //builder.WebHost.UseUrls("http://localhost:5000");
 
 
-builder.WebHost.ConfigureKestrel(serverOptions =>
-{
-    serverOptions.ListenAnyIP(int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "10000"));
-});
-
 
 
 
